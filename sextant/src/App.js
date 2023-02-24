@@ -2,15 +2,19 @@ import React, { Component } from 'react';
 import './App.css';
 import Banner from './Banner';
 import Exhibit from './Exhibit';
+import AddrComp from './AddrComp';
 
 class App extends Component {
   render() {
     return (
       <div className='App'>
         <Banner bannerText='Sextant' />
-        <Exhibit name='I am an Exhibit'></Exhibit>
-        <Exhibit name='Second Exhibit test'></Exhibit>
-        <Exhibit name='Final exhibit test' />
+        <Exhibit name='IPv4 Address'>
+          <AddrComp v4={true} />
+        </Exhibit>
+        <Exhibit name='IPv6 Address'>
+          <AddrComp v4={false} />
+        </Exhibit>
       </div>
     );
   }
