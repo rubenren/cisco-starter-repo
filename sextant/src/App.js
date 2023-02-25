@@ -3,6 +3,7 @@ import './App.css';
 import Banner from './Banner';
 import Exhibit from './Exhibit';
 import AddrComp from './AddrComp';
+import LatencyDisplay from './LatencyDisplay';
 
 class App extends Component {
   render() {
@@ -14,6 +15,9 @@ class App extends Component {
         </Exhibit>
         <Exhibit name='IPv6 Address'>
           <AddrComp v4={false} />
+        </Exhibit>
+        <Exhibit name='Latency'>
+          <LatencyDisplay />
         </Exhibit>
       </div>
     );
